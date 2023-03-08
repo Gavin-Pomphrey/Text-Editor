@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         title: 'Progressive Web Application',
-        template: './src/index.html',
+        template: './index.html',
       }),
     new InjectManifest({
       swSrc: './src-sw.js',
@@ -30,8 +30,8 @@ module.exports = () => {
       name: 'just another text editor',
       short_name: 'JATE',
       description: 'A simple text editor',
-      background_color: '#225ca3',
-      theme_color: '#225ca3',
+      background_color: '#ffffff',
+      theme_color: '#ffffff',
       fingerprints: false,
       inject: true,
       start_url: '/',
